@@ -1,0 +1,1347 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta -->
+    <title>Kasper — We Make Art</title>
+    <meta
+      name="description"
+      content="Kasper is a creative studio specializing in web design, photography, and digital art."
+    />
+    <meta name="theme-color" content="#19c8fa" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Kasper — We Make Art" />
+    <meta
+      property="og:description"
+      content="Kasper is a creative studio specializing in web design, photography, and digital art."
+    />
+    <meta property="og:image" content="./assets/landing.jpg" />
+
+    <!-- Preconnect for Google Fonts (performance) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Fonts — preload critical weight -->
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Normalize -->
+    <link rel="stylesheet" href="./css/normalize.css" />
+
+    <!-- Font Awesome — only the minified bundle (audit fix P3: removed duplicate) -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+
+    <!-- Kasper Styles -->
+    <link rel="stylesheet" href="./css/kasper.css" />
+  </head>
+
+  <body>
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+    <input
+      type="checkbox"
+      id="nav-toggle-state"
+      class="nav-toggle-state"
+      aria-hidden="true"
+    />
+
+    <header role="banner" id="site-header">
+      <div class="container">
+        <a href="/" aria-label="Kasper — go to homepage">
+          <img
+            src="./assets/logo.png"
+            alt="Kasper"
+            height="44"
+            width="auto"
+            fetchpriority="high"
+          />
+        </a>
+
+        <nav aria-label="Main navigation">
+          <label
+            class="nav__toggle"
+            for="nav-toggle-state"
+            aria-label="Toggle navigation menu"
+            role="button"
+            tabindex="0"
+          >
+            <i class="fa-solid fa-bars-staggered" aria-hidden="true"></i>
+          </label>
+
+          <ul id="main-menu" role="list">
+            <li><a class="active" href="#hero" aria-current="page">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+
+          <div class="nav__search" aria-label="Search">
+            <button
+              type="button"
+              aria-label="Open search"
+              class="nav__search-btn"
+            >
+              <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- END HEADER -->
+    <main id="main-content">
+      <!-- =====================================================
+           LANDING / HERO
+           ===================================================== -->
+      <section class="landing" id="hero" aria-label="Hero">
+        <div class="landing__content">
+          <div class="landing__text">
+            <p class="landing__eyebrow">Creative Studio &mdash; Est. 2015</p>
+
+            <h1>
+              We Don&rsquo;t Just<br />
+              Design. We <em>Craft</em><br />
+              Experiences.
+            </h1>
+
+            <p>
+              Kasper is a full-service creative studio blending strategy,
+              design, and technology. From bold brand identities to immersive
+              digital products &mdash; we build work that moves people.
+            </p>
+
+            <div class="landing__cta">
+              <a href="#portfolio" class="landing__btn landing__btn--primary">
+                View Our Work
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </a>
+              <a href="#contact" class="landing__btn landing__btn--ghost">
+                Start a Project
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider controls -->
+        <button type="button" class="slider__prev" aria-label="Previous slide">
+          <i class="fa-solid fa-angle-left" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="slider__next" aria-label="Next slide">
+          <i class="fa-solid fa-angle-right" aria-hidden="true"></i>
+        </button>
+
+        <!-- Slider dots — vertical stack on the right -->
+        <div class="slider__dots" role="tablist" aria-label="Slide navigation">
+          <button
+            type="button"
+            role="tab"
+            aria-selected="true"
+            aria-label="Go to slide 1"
+          ></button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-label="Go to slide 2"
+          ></button>
+          <button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-label="Go to slide 3"
+          ></button>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="landing__scroll" aria-hidden="true">
+          <span class="landing__scroll-line"></span>
+          <span>Scroll</span>
+        </div>
+      </section>
+      <!-- END LANDING -->
+
+      <!-- =====================================================
+           SERVICES
+           ===================================================== -->
+      <section id="services" class="services" aria-labelledby="services-title">
+        <div class="container">
+          <div class="section-header">
+            <h2 id="services-title" class="section-header__title">
+              What We Do
+            </h2>
+            <p class="section-header__subtitle">
+              We offer a focused set of creative services — each one executed
+              with intention, precision, and a deep respect for your brand.
+            </p>
+          </div>
+
+          <div class="services__grid">
+            <div class="services__col">
+              <article class="service-card">
+                <div class="service-card__icon" aria-hidden="true">
+                  <i class="fa-solid fa-desktop"></i>
+                </div>
+                <div class="service-card__body">
+                  <h3>Web Design &amp; Development</h3>
+                  <p>
+                    We design and build fast, accessible websites that reflect
+                    your brand and convert visitors into clients — from landing
+                    pages to full digital platforms.
+                  </p>
+                </div>
+              </article>
+
+              <article class="service-card">
+                <div class="service-card__icon" aria-hidden="true">
+                  <i class="fa-solid fa-pen-ruler"></i>
+                </div>
+                <div class="service-card__body">
+                  <h3>Brand Identity &amp; Design</h3>
+                  <p>
+                    Logos, visual systems, color palettes, typography — we craft
+                    identities that feel authentic and stand apart in a crowded
+                    market.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="services__col">
+              <article class="service-card">
+                <div class="service-card__icon" aria-hidden="true">
+                  <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <div class="service-card__body">
+                  <h3>UI/UX &amp; Product Design</h3>
+                  <p>
+                    We translate complex problems into clean, intuitive
+                    interfaces. Wireframes, prototypes, and polished design
+                    systems — built around real user behavior.
+                  </p>
+                </div>
+              </article>
+
+              <article class="service-card">
+                <div class="service-card__icon" aria-hidden="true">
+                  <i class="fa-solid fa-camera"></i>
+                </div>
+                <div class="service-card__body">
+                  <h3>Photography &amp; Visual Content</h3>
+                  <p>
+                    From product shoots to editorial campaigns, we produce
+                    photography and visual assets that tell your story with
+                    clarity and style.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END SERVICES -->
+
+      <!-- =====================================================
+           FEATURES
+           ===================================================== -->
+
+      <section class="features" aria-label="Why work with us">
+        <div class="features__text">
+          <p class="features__eyebrow">Our Standard</p>
+          <h2>Every Project.<br />Every Detail.</h2>
+          <p class="features__intro">
+            We hold ourselves to a high bar — not just on how things look, but
+            on how they work, load, and scale.
+          </p>
+          <ul class="features__list" role="list">
+            <li>
+              <span class="features__list-icon" aria-hidden="true">
+                <i class="fa-solid fa-mobile-screen"></i>
+              </span>
+              <div>
+                <strong>Responsive by Default</strong>
+                <p>
+                  Every layout is designed mobile-first and tested across all
+                  screen sizes.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span class="features__list-icon" aria-hidden="true">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </span>
+              <div>
+                <strong>Modern &amp; Purposeful</strong>
+                <p>
+                  No trends for the sake of trends — every design choice earns
+                  its place.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span class="features__list-icon" aria-hidden="true">
+                <i class="fa-solid fa-code"></i>
+              </span>
+              <div>
+                <strong>Clean, Maintainable Code</strong>
+                <p>
+                  Semantic HTML, structured CSS, and zero unnecessary
+                  dependencies.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span class="features__list-icon" aria-hidden="true">
+                <i class="fa-solid fa-shield-halved"></i>
+              </span>
+              <div>
+                <strong>Cross-Browser Reliable</strong>
+                <p>
+                  Tested on Chrome, Firefox, Safari, and Edge — your users are
+                  covered.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- END FEATURES -->
+
+      <!-- =====================================================
+           PORTFOLIO
+           ===================================================== -->
+      <section
+        id="portfolio"
+        class="portfolio"
+        aria-labelledby="portfolio-title"
+      >
+        <div class="container">
+          <div class="section-header">
+            <h2 id="portfolio-title" class="section-header__title">Our Work</h2>
+            <p class="section-header__subtitle">
+              A selection of projects we&rsquo;re proud of — spanning brand
+              identity, digital products, and visual storytelling.
+            </p>
+          </div>
+
+          <ul
+            class="portfolio__filters"
+            role="list"
+            aria-label="Filter portfolio by category"
+          >
+            <li>
+              <button type="button" class="portfolio__filter is-active">
+                All
+              </button>
+            </li>
+            <li>
+              <button type="button" class="portfolio__filter">App</button>
+            </li>
+            <li>
+              <button type="button" class="portfolio__filter">
+                Photography
+              </button>
+            </li>
+            <li>
+              <button type="button" class="portfolio__filter">Web</button>
+            </li>
+            <li>
+              <button type="button" class="portfolio__filter">Print</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="portfolio__grid">
+          <div class="portfolio__item">
+            <img
+              src="./assets/portfolio-1.png"
+              alt="Lumina — Mobile app UI design"
+              loading="lazy"
+            />
+            <div class="portfolio__caption">
+              <h4>Lumina App</h4>
+              <p>App Design</p>
+            </div>
+          </div>
+
+          <div class="portfolio__item">
+            <img
+              src="./assets/portfolio-2.jpg"
+              alt="Arcana — Brand identity and visual system"
+              loading="lazy"
+            />
+            <div class="portfolio__caption">
+              <h4>Arcana Brand</h4>
+              <p>Brand Identity</p>
+            </div>
+          </div>
+
+          <div class="portfolio__item">
+            <img
+              src="./assets/portfolio-3.webp"
+              alt="Stillframe — Editorial product photography"
+              loading="lazy"
+            />
+            <div class="portfolio__caption">
+              <h4>Stillframe</h4>
+              <p>Photography</p>
+            </div>
+          </div>
+
+          <div class="portfolio__item">
+            <img
+              src="./assets/portfolio-4.jpg"
+              alt="Verd — Sustainable brand web presence"
+              loading="lazy"
+            />
+            <div class="portfolio__caption">
+              <h4>Verd Studio</h4>
+              <p>Web Design</p>
+            </div>
+          </div>
+
+          <div class="portfolio__item">
+            <img
+              src="./assets/portfolio-5.jpg"
+              alt="Pulse — Dashboard UI for analytics platform"
+              loading="lazy"
+            />
+            <div class="portfolio__caption">
+              <h4>Pulse Dashboard</h4>
+              <p>UI / UX</p>
+            </div>
+          </div>
+
+          <div class="portfolio__item">
+            <img
+              src="./assets/portfolio-6.webp"
+              alt="Forma — Print collateral and stationery design"
+              loading="lazy"
+            />
+            <div class="portfolio__caption">
+              <h4>Forma Print</h4>
+              <p>Print Design</p>
+            </div>
+          </div>
+
+          <div class="portfolio__item">
+            <img
+              src="./assets/portfolio-1.png"
+              alt="Orbit — Mobile e-commerce experience"
+              loading="lazy"
+            />
+            <div class="portfolio__caption">
+              <h4>Orbit Commerce</h4>
+              <p>App Design</p>
+            </div>
+          </div>
+
+          <div class="portfolio__item">
+            <img
+              src="./assets/portfolio-2.jpg"
+              alt="Noir — Dark-mode web interface concept"
+              loading="lazy"
+            />
+            <div class="portfolio__caption">
+              <h4>Noir Interface</h4>
+              <p>Web Design</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#contact" class="portfolio__more">
+          View All Projects
+          <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </section>
+      <!-- END PORTFOLIO -->
+
+      <!-- =====================================================
+           VIDEO
+           ===================================================== -->
+
+      <section class="video-feature" aria-label="Studio showreel">
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          aria-label="Kasper creative studio showreel"
+        >
+          <source src="./assets/Video.mp4" type="video/mp4" />
+        </video>
+
+        <div class="video-feature__overlay" aria-hidden="true"></div>
+
+        <div class="video-feature__text">
+          <p class="video-feature__eyebrow">
+            <i class="fa-solid fa-circle-play" aria-hidden="true"></i>
+            Showreel 2024
+          </p>
+          <h2>Where Ideas<br />Come to Life</h2>
+          <p>
+            A glimpse into our creative process — from the first sketch to the
+            final pixel.
+          </p>
+          <a href="#contact" class="video-feature__btn">
+            Start Your Project
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </section>
+      <!-- END VIDEO -->
+
+      <!-- =====================================================
+           ABOUT
+           ===================================================== -->
+      <!-- <section id="about" class="about" aria-labelledby="about-title">
+        <div class="container">
+          <div class="section-header">
+            <h2 id="about-title" class="section-header__title">About Us</h2>
+            <p class="section-header__subtitle">
+              Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+              Mauris blandit aliquet elit, eget tincidunt.
+            </p>
+       
+            <img
+              src="./assets/samsung.png"
+              alt="Kasper team at work"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section> -->
+      <!-- END ABOUT -->
+      <section id="about" class="about" aria-labelledby="about-title">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-header__eyebrow">Who We Are</p>
+            <h2 id="about-title" class="section-header__title">
+              A Studio Built on Craft
+            </h2>
+            <p class="section-header__subtitle">
+              Founded in 2015, Kasper is an independent creative studio working
+              with brands and individuals who believe great design is never
+              accidental — it is always earned.
+            </p>
+          </div>
+
+          <div class="about__cols">
+            <div class="about__col">
+              <i class="fa-solid fa-users" aria-hidden="true"></i>
+              <h3>The Team</h3>
+              <p>
+                A small, focused group of designers, developers, and
+                strategists. We don't take on more than we can handle — quality
+                is a habit, not a policy.
+              </p>
+            </div>
+
+            <div class="about__col">
+              <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
+              <h3>The Process</h3>
+              <p>
+                Every project starts with listening. We ask the hard questions
+                early, align on goals, then execute with precision from the
+                first sketch to the final pixel.
+              </p>
+            </div>
+
+            <div class="about__col">
+              <i class="fa-solid fa-earth-americas" aria-hidden="true"></i>
+              <h3>The Reach</h3>
+              <p>
+                Over 120 projects delivered across three continents. Startups,
+                agencies, and established brands — all treated with the same
+                level of care.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =====================================================
+           STATISTICS
+           ===================================================== -->
+      <!--
+        IMAGE RECOMMENDATION — Statistics background:
+        A dark, textured background — concrete, dark stone, or abstract.
+        Search Unsplash: "dark concrete texture minimal"
+        or "dark abstract background subtle"
+        Replaces: assets/Statistics.jpg
+      -->
+      <section class="statistics" aria-label="Company statistics">
+        <div class="statistics__overlay" aria-hidden="true"></div>
+        <div class="container">
+          <dl class="stats__list">
+            <div class="stat-item">
+              <dt class="stat-item__label">
+                <i class="fa-solid fa-mug-hot" aria-hidden="true"></i>
+                <span>Cups of Coffee</span>
+              </dt>
+              <dd class="stat-item__value">
+                <span class="stat-item__number">1,263</span>
+              </dd>
+            </div>
+
+            <div class="stat-item">
+              <dt class="stat-item__label">
+                <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+                <span>Projects Delivered</span>
+              </dt>
+              <dd class="stat-item__value">
+                <span class="stat-item__number">256</span>
+              </dd>
+            </div>
+
+            <div class="stat-item">
+              <dt class="stat-item__label">
+                <i
+                  class="fa-solid fa-envelope-open-text"
+                  aria-hidden="true"
+                ></i>
+                <span>Emails Exchanged</span>
+              </dt>
+              <dd class="stat-item__value">
+                <span class="stat-item__number">1,743</span>
+              </dd>
+            </div>
+
+            <div class="stat-item">
+              <dt class="stat-item__label">
+                <i class="fa-solid fa-award" aria-hidden="true"></i>
+                <span>Awards Received</span>
+              </dt>
+              <dd class="stat-item__value">
+                <span class="stat-item__number">17</span>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+      <!-- END STATISTICS -->
+
+      <!-- =====================================================
+           SOCIAL PROOF (Testimonials + Skills)
+           ===================================================== -->
+      <section class="social-proof" aria-label="Testimonials and our skills">
+        <div class="container">
+          <!-- Testimonials -->
+          <div class="testimonials">
+            <p class="section-header__eyebrow">Client Voices</p>
+            <h2>What People Say</h2>
+            <p class="testimonials__subtitle">
+              We measure success by the relationships we build and the results
+              our clients see.
+            </p>
+
+            <figure class="testimonial-card">
+              <img src="./assets/face-1.jpg" alt="Marcus Webb" loading="lazy" />
+              <div class="testimonial-card__body">
+                <blockquote class="testimonial-card__quote">
+                  <p>
+                    Kasper transformed our brand presence completely. The
+                    attention to detail and the strategic thinking behind every
+                    design decision set them apart from anyone else we've worked
+                    with.
+                  </p>
+                </blockquote>
+                <figcaption class="testimonial-card__author">
+                  <cite>
+                    <strong>Marcus Webb</strong>
+                    <span>CEO, Arcana Group</span>
+                  </cite>
+                </figcaption>
+              </div>
+            </figure>
+
+            <figure class="testimonial-card">
+              <img src="./assets/face-2.jpg" alt="Sofia Reyes" loading="lazy" />
+              <div class="testimonial-card__body">
+                <blockquote class="testimonial-card__quote">
+                  <p>
+                    From our first conversation to the final delivery, the
+                    process was seamless. They don't just execute — they think,
+                    they challenge, and they elevate the work at every turn.
+                  </p>
+                </blockquote>
+                <figcaption class="testimonial-card__author">
+                  <cite>
+                    <strong>Sofia Reyes</strong>
+                    <span>Founder, Verd Studio</span>
+                  </cite>
+                </figcaption>
+              </div>
+            </figure>
+
+            <div
+              class="slider__dots slider__dots--sm"
+              role="tablist"
+              aria-label="Testimonial navigation"
+            >
+              <button
+                type="button"
+                role="tab"
+                aria-selected="true"
+                aria-label="Testimonial 1"
+              ></button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-label="Testimonial 2"
+              ></button>
+              <button
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-label="Testimonial 3"
+              ></button>
+            </div>
+          </div>
+
+          <!-- Skills -->
+          <div class="skills">
+            <p class="section-header__eyebrow">What We Master</p>
+            <h2>Our Expertise</h2>
+            <p class="skills__subtitle">
+              Years of focused practice across design, code, and creative
+              strategy — built into every project we take on.
+            </p>
+
+            <div class="skill-bar">
+              <div class="skill-bar__meta">
+                <h4 class="skill-bar__label">
+                  Visual Design &amp; Adobe Suite
+                </h4>
+                <span class="skill-bar__percent">90%</span>
+              </div>
+              <div
+                class="skill-bar__track"
+                role="progressbar"
+                aria-valuenow="90"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-label="Visual Design proficiency 90%"
+              >
+                <span class="skill-bar__fill" style="width: 90%"></span>
+              </div>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-bar__meta">
+                <h4 class="skill-bar__label">HTML &amp; CSS</h4>
+                <span class="skill-bar__percent">95%</span>
+              </div>
+              <div
+                class="skill-bar__track"
+                role="progressbar"
+                aria-valuenow="95"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-label="HTML and CSS proficiency 95%"
+              >
+                <span class="skill-bar__fill" style="width: 95%"></span>
+              </div>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-bar__meta">
+                <h4 class="skill-bar__label">JavaScript &amp; Interaction</h4>
+                <span class="skill-bar__percent">85%</span>
+              </div>
+              <div
+                class="skill-bar__track"
+                role="progressbar"
+                aria-valuenow="85"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-label="JavaScript proficiency 85%"
+              >
+                <span class="skill-bar__fill" style="width: 85%"></span>
+              </div>
+            </div>
+
+            <div class="skill-bar">
+              <div class="skill-bar__meta">
+                <h4 class="skill-bar__label">Brand Strategy &amp; Identity</h4>
+                <span class="skill-bar__percent">88%</span>
+              </div>
+              <div
+                class="skill-bar__track"
+                role="progressbar"
+                aria-valuenow="88"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                aria-label="Brand Strategy proficiency 88%"
+              >
+                <span class="skill-bar__fill" style="width: 88%"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- END SOCIAL PROOF -->
+
+      <!-- =====================================================
+           QUOTE BANNER
+           ===================================================== -->
+      <!--
+        IMAGE RECOMMENDATION — Quote background:
+        A dark, atmospheric photo — empty street at night, misty landscape,
+        or abstract dark texture.
+        Search Unsplash: "dark moody atmosphere minimal"
+        Replaces: assets/Quote.jpg
+      -->
+      <blockquote class="quote-banner">
+        <div class="quote-banner__overlay" aria-hidden="true"></div>
+        <div class="container">
+          <i
+            class="fa-solid fa-quote-left quote-banner__icon"
+            aria-hidden="true"
+          ></i>
+          <p>
+            Good design is not about how things look. It&rsquo;s about how
+            clearly they communicate, how naturally they function, and how long
+            they endure.
+          </p>
+          <cite>
+            <strong>James Kasper</strong>
+            <span>Founder &amp; Creative Director</span>
+          </cite>
+        </div>
+      </blockquote>
+      <!-- END QUOTE BANNER -->
+
+      <!-- =====================================================
+           PRICING
+           ===================================================== -->
+      <section id="pricing" class="pricing" aria-labelledby="pricing-title">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-header__eyebrow">Simple &amp; Transparent</p>
+            <h2 id="pricing-title" class="section-header__title">
+              Choose Your Plan
+            </h2>
+            <p class="section-header__subtitle">
+              No hidden fees, no long-term lock-in. Pick the plan that fits your
+              project — or reach out and we'll build one around you.
+            </p>
+          </div>
+
+          <div class="pricing__grid">
+            <!-- Starter -->
+            <div class="pricing-card">
+              <div class="pricing-card__header">
+                <h3>Starter</h3>
+                <div class="pricing-card__amount">
+                  <span class="pricing-card__currency" aria-hidden="true"
+                    >$</span
+                  >
+                  <strong>19</strong>
+                  <span class="pricing-card__period">/Mo</span>
+                </div>
+                <p class="pricing-card__tagline">
+                  For individuals getting started
+                </p>
+              </div>
+              <ul class="pricing-card__features" role="list">
+                <li>
+                  <i class="fa-solid fa-check" aria-hidden="true"></i> 1 Active
+                  Project
+                </li>
+                <li>
+                  <i class="fa-solid fa-check" aria-hidden="true"></i> Basic
+                  Brand Kit
+                </li>
+                <li>
+                  <i class="fa-solid fa-check" aria-hidden="true"></i> Email
+                  Support
+                </li>
+                <li class="pricing-card__feature--off">
+                  <i class="fa-solid fa-xmark" aria-hidden="true"></i> Source
+                  Files
+                </li>
+              </ul>
+              <div class="pricing-card__footer">
+                <a href="#contact" class="pricing-card__cta">Get Started</a>
+              </div>
+            </div>
+
+            <!-- Growth -->
+            <div class="pricing-card">
+              <div class="pricing-card__header">
+                <h3>Growth</h3>
+                <div class="pricing-card__amount">
+                  <span class="pricing-card__currency" aria-hidden="true"
+                    >$</span
+                  >
+                  <strong>29</strong>
+                  <span class="pricing-card__period">/Mo</span>
+                </div>
+                <p class="pricing-card__tagline">
+                  For small teams &amp; studios
+                </p>
+              </div>
+              <ul class="pricing-card__features" role="list">
+                <li>
+                  <i class="fa-solid fa-check" aria-hidden="true"></i> 3 Active
+                  Projects
+                </li>
+                <li>
+                  <i class="fa-solid fa-check" aria-hidden="true"></i> Full
+                  Brand System
+                </li>
+                <li>
+                  <i class="fa-solid fa-check" aria-hidden="true"></i> Priority
+                  Support
+                </li>
+                <li>
+                  <i class="fa-solid fa-check" aria-hidden="true"></i> Source
+                  Files Included
+                </li>
+              </ul>
+              <div class="pricing-card__footer">
+                <a href="#contact" class="pricing-card__cta">Get Started</a>
+              </div>
+            </div>
+
+            <!-- Pro — featured -->
+            <div class="pricing-card pricing-card--featured">
+              <div class="pricing-card__badge">Most Popular</div>
+              <div class="pricing-card__header">
+                <h3>Pro</h3>
+                <div class="pricing-card__amount">
+                  <span class="pricing-card__currency" aria-hidden="true"
+                    >$</span
+                  >
+                  <strong>39</strong>
+                  <span class="pricing-card__period">/Mo</span>
+                </div>
+                <p class="pricing-card__tagline">For growing businesses</p>
+              </div>
+              <ul class="pricing-card__features" role="list">
+                <li>
+                  <i class="fa-solid fa-check" aria-hidden="true"></i> Unlimited
+                  Projects
+                </li>
+                <li>
+                  <i class="fa-solid fa-check" aria-hidden="true"></i> Full
+                  Design System
+                </li>
+                <li>
+                  <i class="fa-solid fa-check" aria-hidden="true"></i> Dedicated
+                  Designer
+                </li>
+                <li>
+                  <i class="fa-solid fa-check" aria-hidden="true"></i> Source
+                  Files &amp; Handoff
+                </li>
+              </ul>
+              <div class="pricing-card__footer">
+                <a href="#contact" class="pricing-card__cta">Get Started</a>
+              </div>
+            </div>
+
+            <!-- Platinum -->
+            <div class="pricing-card">
+              <div class="pricing-card__header">
+                <h3>Platinum</h3>
+                <div class="pricing-card__amount">
+                  <span class="pricing-card__currency" aria-hidden="true"
+                    >$</span
+                  >
+                  <strong>49</strong>
+                  <span class="pricing-card__period">/Mo</span>
+                </div>
+                <p class="pricing-card__tagline">
+                  For agencies &amp; enterprises
+                </p>
+              </div>
+              <ul class="pricing-card__features" role="list">
+                <li>
+                  <i class="fa-solid fa-check" aria-hidden="true"></i>
+                  Everything in Pro
+                </li>
+                <li>
+                  <i class="fa-solid fa-check" aria-hidden="true"></i>
+                  White-Label Rights
+                </li>
+                <li>
+                  <i class="fa-solid fa-check" aria-hidden="true"></i> SLA &amp;
+                  Contracts
+                </li>
+                <li>
+                  <i class="fa-solid fa-check" aria-hidden="true"></i>
+                  Onboarding Session
+                </li>
+              </ul>
+              <div class="pricing-card__footer">
+                <a href="#contact" class="pricing-card__cta">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pricing__footer">
+            <p>Have a custom project or a unique scope?</p>
+            <a href="#contact" class="pricing__contact-link">
+              Let&rsquo;s Talk
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- END PRICING -->
+
+      <!-- =====================================================
+           SUBSCRIBE
+           ===================================================== -->
+      <!--
+        IMAGE RECOMMENDATION — Subscribe background:
+        A clean, dark abstract or blurred workspace shot.
+        Search Unsplash: "dark email newsletter abstract"
+        or "dark blurred lights bokeh"
+        Replaces: assets/email.jpg
+      -->
+      <section class="subscribe" aria-label="Newsletter subscription">
+        <div class="subscribe__overlay" aria-hidden="true"></div>
+        <div class="container">
+          <div class="subscribe__body">
+            <div class="subscribe__copy">
+              <p class="subscribe__eyebrow">Stay in the Loop</p>
+              <h2>Ideas Worth Sharing</h2>
+              <p>
+                Once a month — no more. We share what we're working on, what
+                we're thinking about, and occasional insights on design, craft,
+                and the creative process.
+              </p>
+            </div>
+
+            <form
+              class="subscribe__form"
+              aria-label="Subscribe to our newsletter"
+              novalidate
+            >
+              <div class="subscribe__input-group">
+                <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+                <label for="subscribe-email" class="sr-only"
+                  >Email address</label
+                >
+                <input
+                  id="subscribe-email"
+                  class="subscribe__input"
+                  type="email"
+                  name="email"
+                  placeholder="Your email address"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+              <button type="submit" class="subscribe__btn">
+                Subscribe
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- END SUBSCRIBE -->
+
+      <!-- =====================================================
+           CONTACT
+           ===================================================== -->
+      <section id="contact" class="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-header__eyebrow">Let&rsquo;s Work Together</p>
+            <h2 id="contact-title" class="section-header__title">
+              Start a Conversation
+            </h2>
+            <p class="section-header__subtitle">
+              Tell us about your project. We read every message and respond
+              within one business day.
+            </p>
+          </div>
+
+          <div class="contact__layout">
+            <form class="contact__form" aria-label="Contact form" novalidate>
+              <div class="contact__row">
+                <div class="contact__field">
+                  <label for="contact-name" class="contact__label"
+                    >Your Name</label
+                  >
+                  <input
+                    id="contact-name"
+                    class="form__input"
+                    type="text"
+                    name="name"
+                    placeholder="James Smith"
+                    autocomplete="name"
+                    required
+                  />
+                </div>
+                <div class="contact__field">
+                  <label for="contact-email" class="contact__label"
+                    >Email Address</label
+                  >
+                  <input
+                    id="contact-email"
+                    class="form__input"
+                    type="email"
+                    name="email"
+                    placeholder="james@studio.com"
+                    autocomplete="email"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="contact__field">
+                <label for="contact-subject" class="contact__label"
+                  >Subject</label
+                >
+                <input
+                  id="contact-subject"
+                  class="form__input"
+                  type="text"
+                  name="subject"
+                  placeholder="Brand identity project, web design, or just saying hello"
+                  required
+                />
+              </div>
+
+              <div class="contact__field">
+                <label for="contact-message" class="contact__label"
+                  >Your Message</label
+                >
+                <textarea
+                  id="contact-message"
+                  class="form__input contact__textarea"
+                  name="message"
+                  placeholder="Tell us about your project, your goals, and your timeline…"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="contact__submit">
+                Send Message
+                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+              </button>
+            </form>
+
+            <aside class="contact__info" aria-label="Contact information">
+              <div class="contact__info-block">
+                <span class="contact__info-icon" aria-hidden="true">
+                  <i class="fa-solid fa-phone"></i>
+                </span>
+                <div>
+                  <h3>Call Us</h3>
+                  <address>
+                    <a href="tel:+001234567890">+00 123.456.789</a>
+                    <a href="tel:+001234567891">+00 123.456.791</a>
+                  </address>
+                </div>
+              </div>
+
+              <div class="contact__info-block">
+                <span class="contact__info-icon" aria-hidden="true">
+                  <i class="fa-solid fa-location-dot"></i>
+                </span>
+                <div>
+                  <h3>Visit Us</h3>
+                  <address>
+                    17 Creative Avenue<br />
+                    New York, NY 10001<br />
+                    United States
+                  </address>
+                </div>
+              </div>
+
+              <div class="contact__info-block">
+                <span class="contact__info-icon" aria-hidden="true">
+                  <i class="fa-solid fa-envelope"></i>
+                </span>
+                <div>
+                  <h3>Email Us</h3>
+                  <address>
+                    <a href="mailto:hello@kasper.studio">hello@kasper.studio</a>
+                    <a href="mailto:work@kasper.studio">work@kasper.studio</a>
+                  </address>
+                </div>
+              </div>
+
+              <div class="contact__info-block">
+                <span class="contact__info-icon" aria-hidden="true">
+                  <i class="fa-solid fa-clock"></i>
+                </span>
+                <div>
+                  <h3>Working Hours</h3>
+                  <p>Mon &ndash; Fri: 9:00 AM &ndash; 6:00 PM</p>
+                  <p>Weekend: By appointment</p>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+      <!-- END CONTACT -->
+    </main>
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+    <!--
+      IMAGE RECOMMENDATION — Footer background:
+      A very dark textured surface — dark wood grain, dark concrete,
+      or a near-black gradient.
+      Search Unsplash: "dark black texture minimal background"
+      Replaces: assets/footer.jpg
+    -->
+    <footer role="contentinfo">
+      <div class="footer__overlay" aria-hidden="true"></div>
+
+      <div class="footer__top">
+        <div class="container">
+          <div class="footer__brand">
+            <a href="/" aria-label="Kasper — go to homepage">
+              <img
+                class="footer__logo"
+                src="./assets/logo.png"
+                alt="Kasper"
+                height="48"
+                width="auto"
+                loading="lazy"
+              />
+            </a>
+            <p class="footer__tagline">
+              We don&rsquo;t just design.<br />We craft experiences.
+            </p>
+            <ul
+              class="footer__social"
+              role="list"
+              aria-label="Social media links"
+            >
+              <li>
+                <a
+                  href="#"
+                  aria-label="Follow us on Facebook"
+                  class="footer__social-link"
+                >
+                  <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  aria-label="Follow us on Twitter / X"
+                  class="footer__social-link"
+                >
+                  <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  aria-label="Connect on LinkedIn"
+                  class="footer__social-link"
+                >
+                  <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  aria-label="View our Instagram"
+                  class="footer__social-link"
+                >
+                  <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  aria-label="Watch on Behance"
+                  class="footer__social-link"
+                >
+                  <i class="fa-brands fa-behance" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <nav class="footer__nav" aria-label="Footer navigation">
+            <div class="footer__nav-group">
+              <h4>Navigate</h4>
+              <ul role="list">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav-group">
+              <h4>Services</h4>
+              <ul role="list">
+                <li><a href="#services">Web Design</a></li>
+                <li><a href="#services">Brand Identity</a></li>
+                <li><a href="#services">UI / UX Design</a></li>
+                <li><a href="#services">Photography</a></li>
+              </ul>
+            </div>
+            <div class="footer__nav-group">
+              <h4>Contact</h4>
+              <ul role="list">
+                <li>
+                  <a href="mailto:hello@kasper.studio">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                    hello@kasper.studio
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+001234567890">
+                    <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                    +00 123.456.789
+                  </a>
+                </li>
+                <li>
+                  <address>
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    17 Creative Ave, New York
+                  </address>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="container">
+          <p class="footer__copyright">
+            &copy; 2024 <span>Kasper Studio</span>. All Rights Reserved.
+          </p>
+          <p class="footer__credit">
+            Crafted with <i class="fa-solid fa-heart" aria-hidden="true"></i> by
+            the Kasper team.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+  </body>
+</html>
